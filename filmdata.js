@@ -6,17 +6,10 @@ let filmData = [
     description: "Aaron tries to take a test.",
   },
   {
-    title: "Trailer Mashup",
-    workedOn: "Oct 2023",
-    url: "https://www.youtube.com/embed/3_Kq0XcKOC8?si=K7PjH16No8qQtySb",
-    description: "Everything was made using the power of love. Nobody really knows what it was caused by, but who cares?",
-
-  },
-  {
     title: "Painting the Portrait",
     workedOn: "Sum 2022",
     url: "https://www.youtube.com/embed/QArHnmJhCMs?si=H-T3y0u6SpDOE2Q4",
-    description: "All in one take.",
+    description: "Behind the scenes documentary of The Portrait.",
   },
   {
     title: "The Entire History of the Endverse",
@@ -25,17 +18,84 @@ let filmData = [
     description: "Everything that happens in the entire Ender's Game book series.",
   },
   {
+    title: "Other Friends but Spinel is Bill",
+    workedOn: "Oct 2020",
+    url: "https://www.youtube.com/embed/Uy9bZb83kN4?si=f0FM5OuNI79PqGM6",
+    description: "An animation."
+  },
+  {
+    title: "Trailer Mashup",
+    workedOn: "Oct 2023",
+    url: "https://www.youtube.com/embed/3_Kq0XcKOC8?si=K7PjH16No8qQtySb",
+    description: "Keep. Your. Currency.",
+
+  },
+]
+  
+
+let jokeFilms = [
+  {
+    title: "The Detective",
+    workedOn: "Oct 2022",
+    url: "https://www.youtube.com/embed/q2fSrbLJdpk?si=fILKVfyXH8uPuK8m",
+    description: "It's rude to die.",
+  },
+  {
     title: "Misaligned",
     workedOn: "Jul 2022",
     url: "https://www.youtube.com/embed/9ocGLIK8ib8?si=H5oQS_YoysI7MWxz",
     description: "Two children at an Artificial Intelligence Alignment Camp fall in love, and everything is amazing. Or is it?"
+  },
+]
+
+let filmsIHelpedOn = [
+  {
+    title: "The Portrait",
+    workedOn: "Mar 2022",
+    url: "https://www.youtube.com/embed/AHwUDHgyFIY?si=0LC42lb8AKmTu3ks",
+    description: "Acted + tech."
+  },
+  {
+    title: "My Silent Friend",
+    workedOn: "Dec 2022 - June 2023",
+    url: "https://www.youtube.com/embed/HKnpFOSiCZk?si=W16i_gfoBH5AsxWy",
+    description: "Helped with camera tech."
+
+  },
+  {title: "Master's Enterance Video 2023",
+  workedOn: "Jan - Jun 2023",
+  url: "https://www.youtube.com/embed/eM-X13BgBAk?si=Eo-A2tUpAhTZYl2S",
+  description: "Writing + filming"
+  },
+  {
+    title: "By the Lake",
+    workedOn: "Dec 2022",
+    url: "https://www.youtube.com/embed/hE_X0az-mYo?si=10TVcwQUc4NxF9fu",
+    description: "By the Soundtrack is a spoof of By the Lake, with custom soundtracks and editing."
+  },
+]
+
+let filmExtras = [
+  {
+    title: "Spotting Aaron Bloopers",
+    workedOn: "Jan 2024",
+    url: "https://www.youtube.com/embed/nuvhZCGybzc?si=r4moh7dHhgQ8B-Qb",
+    description: "I'm sure despite his intelligence he knows it too."
+  },
+  {
+    title: "Painting the Portrait Commentary",
+    workedOn: "Oct 2022",
+    url: "https://www.youtube.com/embed/cEbEDBTPvj4?si=VCBlC8WfNEjzqXaE",
+    description: "Commentary track."
   }
 ]
+
+
 
 document.addEventListener ('DOMContentLoaded', () => {
   const filmcardsContainer = document.querySelector ('.filmcardsContainer');
 
-  filmData.forEach (film => {
+  function addFilmToContainer(film, filmcardsContainer){
     const filmCard = document.createElement ('div');
     filmCard.classList.add ('filmcard');
 
@@ -60,5 +120,61 @@ document.addEventListener ('DOMContentLoaded', () => {
     filmCard.appendChild (description);
 
     filmcardsContainer.appendChild (filmCard);
+
+  }
+
+  filmData.forEach (film => {
+    addFilmToContainer(film, document.querySelector ('#seriousFilms'))
   });
+
+  jokeFilms.forEach (film => {
+  addFilmToContainer (film, document.querySelector ('#jokeFilms'));
 });
+
+filmsIHelpedOn.forEach (film => {
+  addFilmToContainer (film, document.querySelector ('#filmsIHelpedOn'));
+});
+
+filmExtras.forEach (film => {
+  addFilmToContainer (film, document.querySelector ('#filmExtras'));
+});
+
+
+
+});
+
+
+// document.addEventListener ('DOMContentLoaded', () => {
+//   const filmcardsContainer = document.querySelector ('.filmcardsContainer');
+
+//   function addFilmToContainer(filmList, container){
+    
+//   }
+
+//   filmData.forEach (film => {
+//     const filmCard = document.createElement ('div');
+//     filmCard.classList.add ('filmcard');
+
+//     const iframe = document.createElement ('iframe');
+//     iframe.src = film.url;
+//     iframe.frameBorder = '0';
+//     iframe.allow =
+//       'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+//     iframe.allowFullscreen = true;
+//     filmCard.appendChild (iframe);
+
+//     const title = document.createElement ('h2');
+//     title.textContent = film.title;
+//     filmCard.appendChild (title);
+
+//     const workedOn = document.createElement ('p');
+//     workedOn.textContent = film.workedOn;
+//     filmCard.appendChild (workedOn);
+
+//     const description = document.createElement ('p');
+//     description.textContent = film.description;
+//     filmCard.appendChild (description);
+
+//     filmcardsContainer.appendChild (filmCard);
+//   });
+// });
