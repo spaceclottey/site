@@ -7,19 +7,19 @@ let filmData = [
   },
   {
     title: "Painting the Portrait",
-    workedOn: "Sum 2022",
+    workedOn: "July 2022",
     url: "https://www.youtube.com/embed/QArHnmJhCMs?si=H-T3y0u6SpDOE2Q4",
     description: "Behind the scenes documentary of The Portrait.",
   },
   {
     title: "The Entire History of the Endverse",
-    workedOn: "Oct 2023",
+    workedOn: "Dec 2023",
     url: "https://www.youtube.com/embed/HnvrvJ22z7M?si=foL6afip5DVphw_p",
     description: "Everything that happens in the entire Ender's Game book series.",
   },
   {
     title: "Other Friends but Spinel is Bill",
-    workedOn: "Oct 2020",
+    workedOn: "April 2020",
     url: "https://www.youtube.com/embed/Uy9bZb83kN4?si=f0FM5OuNI79PqGM6",
     description: "An animation."
   },
@@ -44,7 +44,7 @@ let jokeFilms = [
     title: "Misaligned",
     workedOn: "Jul 2022",
     url: "https://www.youtube.com/embed/9ocGLIK8ib8?si=H5oQS_YoysI7MWxz",
-    description: "Two children at an Artificial Intelligence Alignment Camp fall in love, and everything is amazing. Or is it?"
+    description: "Two children at an AI summer camp fall in love, and everything is amazing. Or is it?"
   },
 ]
 
@@ -57,13 +57,13 @@ let filmsIHelpedOn = [
   },
   {
     title: "My Silent Friend",
-    workedOn: "Dec 2022 - June 2023",
+    workedOn: "June 2023",
     url: "https://www.youtube.com/embed/HKnpFOSiCZk?si=W16i_gfoBH5AsxWy",
     description: "Helped with camera tech."
 
   },
   {title: "Master's Enterance Video 2023",
-  workedOn: "Jan - Jun 2023",
+  workedOn: "May 2023",
   url: "https://www.youtube.com/embed/eM-X13BgBAk?si=Eo-A2tUpAhTZYl2S",
   description: "Writing + filming"
   },
@@ -71,7 +71,7 @@ let filmsIHelpedOn = [
     title: "By the Lake",
     workedOn: "Dec 2022",
     url: "https://www.youtube.com/embed/hE_X0az-mYo?si=10TVcwQUc4NxF9fu",
-    description: "By the Soundtrack is a spoof of By the Lake, with custom soundtracks and editing."
+    description: "I helped with the script on By the Lake. Later, spoofed it and made ByTheSoundtrack."
   },
 ]
 
@@ -80,13 +80,13 @@ let filmExtras = [
     title: "Spotting Aaron Bloopers",
     workedOn: "Jan 2024",
     url: "https://www.youtube.com/embed/nuvhZCGybzc?si=r4moh7dHhgQ8B-Qb",
-    description: "I'm sure despite his intelligence he knows it too."
+    description: "Bloopers from the filming of Spotting Aaron."
   },
   {
     title: "Painting the Portrait Commentary",
     workedOn: "Oct 2022",
     url: "https://www.youtube.com/embed/cEbEDBTPvj4?si=VCBlC8WfNEjzqXaE",
-    description: "Commentary track."
+    description: "Commentary track for Painting the Portrait."
   }
 ]
 

@@ -62,9 +62,9 @@ video {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.filmcard:not(:last-child) {
+/* .filmcard:not(:last-child) {
   margin-bottom: 20px;
-}
+} */
 
 .filmcard iframe {
   width: 100%;
