@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="wizardstyle.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>At Long Last</title>
-  <script>
-    count = 0
-    conversation = ['I am coming', 'to take over the world', 'you cannot stop me', 'though you may try',
-    'the more you try to save yourself', 'the closer you bring the world', 'to doom', 'this website is just the beginning', 'everything you see', 'will be dust', 'kneel before ye mighty works and tremble', 'You silly, silly slug',
-    "You're still here?", 'haha', 'type the first part of my last name', 'to see the full story']
-    function getCrazier(){
-      if(count < conversation.length) {
-        document.getElementById('bigList').innerHTML += ('<li>' + conversation[count] + '</li>')
-      } else if (count == conversation.length){
-        document.getElementById('bigList').innerHTML += ('<input id="gatewayToTruth" onsubmit="console.log(\'okay\')" placeholder=""> </input>')
-        document.querySelector('#gatewayToTruth').addEventListener('keypress', function (e) {
-          if (e.key === 'Enter') {
-            console.log('entered')
-            // code for enter
-            if (document.getElementById("gatewayToTruth").value == 'Lutterodt'){
-              document.getElementById('theBody').innerHTML += (`<marquee> Okay, the truth. Once apon a time this site was owned by my father. Space Clottey. I begged and begged of him to release this domain to me once I came of age to want such things. Apon understanding the depth of my request my father did his best to help me; he no longer needed the domain, see. Like many, this domain too was a thing of his youth. He went on to goDaddy and tried to release the domain to me, but alas he did not have his own details. And while the years waxed onward and I grew old and grey, I would spend the days and nights pouring over as many variations of the .space domain I could, desperate to find a replacement that would not offend even those with the most illiterate of tech sensibilities. I settled on the unfortunately named spacelutt.com and left it at that. Shortly afterwards, the website you see here was attatcked by chinese hackers, and covered in innapropriate photos it was. Why, you ask? Eludes me. And as our tale drags closer to the present day, I keep checking porkbun, desperate for the day it could return to me...................................................And then...................................................................................It did............................................................................................The world is finally mine. You ain't seeing where this one's going.
-              </marquee>`)
-              
-            } else {
-              alert("Be gone, incorrect simpleton")
-              document.getElementById('theBody').style='background-color: red'
-              document.getElementById('myStuff').hidden=true
-            }
-          }
-        });
-      }
-      count++
-    }
-
-    
-  </script>
+  <title>Space L Clottey</title>
 </head>
-<body onclick="getCrazier()" id="theBody" style="height: 100vh">
-  <div id="myStuff"> 
-    <p> For a long, long, long time I have wanted this domain. </p>
 
-    <p> But now, the day has come. </p>
+<body>
+  <video autoplay loop muted id="myVideo"> 
+    <source src="Trailer_Mashup.mp4" type="video/mp4">
+  </video>
 
-    <p> This domain is mine. </p>
-
-    <p> The world is finally mine. </p>
-
-    <p> You ain't seeing where this one's going. </p>
-
-    <h1> Space L Clottey </h1>
-    <ul id="bigList"> 
-    <ul>
-    <p id="wrongname" hidden> Well, you tried </p>
-    <p id="rightname" hidden>I like the cut of your gem</p>
+  <div class="text_above_video">
+    <!-- <p id="my_name_above_video"> space lutterodt-clottey </p> -->
+    <div class="small_text_above_video">
+      <!-- <p> Web Dev &rarr;</p>
+      <p> Filmmaker &rarr;</p>
+      <p> More &darr;</p> -->
+    </div>
   </div>
-</body>
+
+  <div class="info_after_video_scroll_down">
+    <h1> space lutterodt-clottey </h1>
+    <!-- <h2> Hello </h2> -->
+    <p> I like creating things. </p>
+    <p> In 2021 I started at Wellington College in England and in 2023 I started at Emory University in the US. </p>
+    <p> Browse this website, watch the stuff on it, enjoy it, savour it, lick the droplets of moisture from its tantalising-- </p>
+    <div class="films">
+      <h1> films </h1>
+      <div class="filmcardsContainer">
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="filmdata.js"></script>
+</body>  
 </html>
