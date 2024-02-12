@@ -1,0 +1,91 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+video {
+  object-fit: cover;
+  filter: brightness(50%);
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.middle_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  border: 3px solid green;
+  flex-direction: column;
+}
+
+#Space {
+  font-size: 6rem;
+  font-family: sans-serif;
+}
+
+.smallerText {
+  font-size: 2rem;
+  color: lightgrey;
+}
+
+.info {
+  border: 3px solid red;
+  width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.filmcardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.filmcard {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.filmcard h2 {
+  font-size: 24px;
+}
+
+.filmcard iframe {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    width: 90%;
+  }
+}
+
+/* additional styles for responsiveness */
+@media screen and (max-width: 768px) {
+  #Space {
+    font-size: 4rem;
+  }
+
+  .smallerText {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Space {
+    font-size: 3rem;
+  }
+
+  .smallerText {
+    font-size: 1rem;
+  }
+}
