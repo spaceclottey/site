@@ -6,6 +6,13 @@ let filmData = [
     description: "Aaron tries to take a test.",
   },
   {
+    title: "Tell Tail",
+    workedOn: "Feb 2024",
+    url: "https://www.youtube.com/embed/az8SANXh6IM?si=lIv3gEggWNJHPzJ_",
+    description: "Single shot short film.",
+
+  },
+  {
     title: "Painting the Portrait",
     workedOn: "July 2022",
     url: "https://www.youtube.com/embed/QArHnmJhCMs?si=H-T3y0u6SpDOE2Q4",
