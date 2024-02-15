@@ -19,7 +19,7 @@ let filmData = [
     description: "Behind the scenes documentary of The Portrait.",
   },
   {
-    title: "The Entire History of the Endverse",
+    title: "The Entire History of the Enderverse",
     workedOn: "Dec 2023",
     url: "https://www.youtube.com/embed/HnvrvJ22z7M?si=foL6afip5DVphw_p",
     description: "Everything that happens in the entire Ender's Game book series.",
@@ -69,7 +69,7 @@ let filmsIHelpedOn = [
     description: "Helped with camera tech."
 
   },
-  {title: "Master's Enterance Video 2023",
+  {title: "Master's Entrance Video 2023",
   workedOn: "May 2023",
   url: "https://www.youtube.com/embed/eM-X13BgBAk?si=Eo-A2tUpAhTZYl2S",
   description: "Writing + filming"
