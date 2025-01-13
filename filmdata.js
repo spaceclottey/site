@@ -1,5 +1,11 @@
 let filmData = [
   {
+    title: "Eunie vs Roy vs Fermat's Last Theorem",
+    workedOn: "Jan 2025",
+    url: "https://www.youtube.com/embed/3jEdNhiDU2s",
+    description: "A college student vehemently disagrees with her professor about the origin of a famous equation",
+  },
+  {
     title: "Spotting Aaron",
     workedOn: "Nov 2023",
     url: "https://www.youtube.com/embed/L8S1OmaDN5s?si=_7RX5mRWjUR8YevV",
