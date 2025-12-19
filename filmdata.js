@@ -160,7 +160,7 @@ filmExtras.forEach (film => {
 });
 
 tethersnipeTeaser.forEach (film => {
-  addFilmToContainer (film, document.querySelector('#tethersnipeTeaser')
+  addFilmToContainer (film, document.querySelector('#tethersnipeTeaser'));
 });
 
 
@@ -202,6 +202,7 @@ tethersnipeTeaser.forEach (film => {
 //     filmcardsContainer.appendChild (filmCard);
 //   });
 // });
+
 
 
 
