@@ -139,7 +139,7 @@ document.addEventListener ('DOMContentLoaded', () => {
     description.textContent = film.description;
     filmCard.appendChild (description);
 
-    if (filmCardsContainer) {
+    if (filmCardsContainer != null) {
       filmcardsContainer.appendChild (filmCard);
     } else {
       console.log("filmCardContainer is null, so missing at least 1 of the film categories")
@@ -206,6 +206,7 @@ tethersnipeTeaser.forEach (film => {
 //     filmcardsContainer.appendChild (filmCard);
 //   });
 // });
+
 
 
 
