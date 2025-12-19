@@ -18,6 +18,23 @@ video {
   z-index: -1;
 }
 
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4vh 0 2vh 0;   /* breathing room top & bottom */
+}
+
+.logo {
+  width: 80vw;           /* main control knob */
+  max-width: 700px;      /* desktop cap */
+  min-width: 260px;      /* prevents tiny logo on phones */
+
+  height: auto;
+}
+
+
 .text_above_video {
   position: fixed;
   width: 100%;
@@ -98,4 +115,5 @@ video {
 .small_text_above_video p {
   font-size: calc(1rem + 1vw);
   padding: 0 20px;
+
 }
