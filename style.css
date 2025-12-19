@@ -2,21 +2,6 @@
     display: none;
 }
 
-.logo-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 4vh 0 2vh 0;   /* breathing room top & bottom */
-}
-
-.logo {
-  width: 80vw;           /* main control knob */
-  max-width: 700px;      /* desktop cap */
-  min-width: 260px;      /* prevents tiny logo on phones */
-
-  height: auto;
-}
 
 
 video {
