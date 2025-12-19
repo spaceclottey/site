@@ -44,6 +44,13 @@ let filmData = [
 
   },
 ]
+
+let tethersnipeTeaser = [{
+  title: "Tethersnipe - Teaser Trailer",
+  workedOn: "Summer 2026",
+  url: "https://www.youtube.com/embed/sUGTUjznAbU?si=NkCGqpZpyRB_JXhM",
+  description: "An entomologist, a saint and a nuisance walk into a dying arcade. The only joke is you control their lives."
+}]
   
 
 let jokeFilms = [
@@ -191,3 +198,4 @@ filmExtras.forEach (film => {
 //     filmcardsContainer.appendChild (filmCard);
 //   });
 // });
+
