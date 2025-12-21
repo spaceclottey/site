@@ -1,9 +1,15 @@
 let filmData = [
   {
+    title: "Tethersnipe - Teaser Trailer",
+    workedOn: "Coming Summer 2026",
+    url: "https://www.youtube.com/embed/sUGTUjznAbU?si=NkCGqpZpyRB_JXhM",
+    description: "Original interactive stageplay turned online interactive film.",
+  },
+  {
     title: "Eunie vs Roy vs Fermat's Last Theorem",
     workedOn: "Jan 2025",
     url: "https://www.youtube.com/embed/3jEdNhiDU2s",
-    description: "A college student vehemently disagrees with her professor about the origin of a famous equation",
+    description: "A college student vehemently disagrees with her professor about the origin of a famous equation.",
   },
   {
     title: "Spotting Aaron",
@@ -206,6 +212,7 @@ tethersnipeTeaser.forEach (film => {
 //     filmcardsContainer.appendChild (filmCard);
 //   });
 // });
+
 
 
 
