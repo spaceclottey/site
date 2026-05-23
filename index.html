@@ -1,57 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="wizardstyle.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space L Clottey</title>
+  <meta name="theme-color" content="#0a0a0a">
+  <title>space lutterodt-clottey</title>
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<!--   
-  <video autoplay loop muted id="myVideo"> 
-    <source src="Trailer_Mashup.mp4" type="video/mp4">
-  </video> -->
 
-  <!-- <div class="text_above_video">
-     <p id="my_name_above_video"> space lutterodt-clottey </p>
-    <div class="small_text_above_video">
-      <p> Web Dev &rarr;</p>
-      <p> Filmmaker &rarr;</p>
-      <p> More &darr;</p> 
+  <section class="hero">
+    <video class="bg-video" autoplay loop muted playsinline preload="auto"
+           poster="hero-poster.jpg"
+           disablepictureinpicture disableremoteplayback>
+      <source src="hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <nav class="corner corner-right" aria-label="quick links">
+      <a href="#reel">animation reel</a>
+      <a class="email-link" href="contact.html">space [at] spaceclottey.com</a>
+    </nav>
+
+    <div class="hero-text">
+      <h1>space lutterodt-clottey</h1>
+      <p class="taglines">
+        <a href="#films">filmmaker</a>
+        <a href="#reel">animator</a>
+        <span>cs+math @ emory</span>
+      </p>
     </div>
-  </div> -->
 
+    <a href="#films" class="scroll-cue" aria-label="scroll">↓</a>
+  </section>
 
-  <div class="info_after_video_scroll_down">
-    <h1> space lutterodt-clottey </h1>
-    <!-- <h2> Hello </h2> -->
-    <p> I like creating things. </p>
-    <p> In 2021 I started Wellington College in England and in 2023 I started Emory University in the US. </p>
-    <p> Browse this website, watch the stuff on it, enjoy it, savour it, etc.</p>
-    <div class="films">
-      <h1> films </h1>
-      <div class="filmcardsContainer" id="seriousFilms">
+  <section id="films" class="projects">
+    <h2>selected work</h2>
 
+    <article class="project">
+      <button class="yt-facade" data-yt="sUGTUjznAbU" aria-label="Play Tethersnipe trailer">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/sUGTUjznAbU/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <div class="project-info">
+        <h3>Tethersnipe</h3>
+        <p class="meta">interactive film</p>
+        <p>Original interactive stageplay turned online interactive film.</p>
+        <p><a class="project-link" href="https://tethersnipe.com" target="_blank" rel="noopener">tethersnipe.com →</a></p>
       </div>
+    </article>
 
-      <h1> joke films </h1>
-      <div class="filmcardsContainer" id="jokeFilms">
-        
+    <article class="project">
+      <button class="yt-facade" data-yt="FuYbVLEmrrQ" aria-label="Play One Interesting Thing">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/FuYbVLEmrrQ/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <div class="project-info">
+        <h3>One Interesting Thing</h3>
+        <p class="meta">animated film · 16 min</p>
+        <p>A new professor stops at nothing to get her students to share one truly interesting thing about themselves.</p>
       </div>
-      <h1> films I helped on </h1>
-      <div class="filmcardsContainer" id="filmsIHelpedOn">
-      
-      </div>
+    </article>
 
-      <h1> extras </h1>
-      <div class="filmcardsContainer" id="filmExtras">
-      
+    <article class="project">
+      <button class="yt-facade" data-yt="3jEdNhiDU2s" aria-label="Play Eunie vs Roy vs Fermat's Last Theorem">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/3jEdNhiDU2s/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <div class="project-info">
+        <h3>Eunie vs Roy vs Fermat's Last Theorem</h3>
+        <p class="meta">short film · jan 2025</p>
+        <p>A college student vehemently disagrees with her professor about the origin of a famous equation.</p>
       </div>
-    </div>
-    <script src="filmdata.js"></script>
-  </div>
-  
-</body>  
+    </article>
+
+    <article class="project">
+      <button class="yt-facade" data-yt="L8S1OmaDN5s" aria-label="Play Spotting Aaron">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/L8S1OmaDN5s/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <div class="project-info">
+        <h3>Spotting Aaron</h3>
+        <p class="meta">short film · nov 2023</p>
+        <p>Aaron tries to take a test.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="reel" class="reel">
+    <h2>animation reel</h2>
+    <button class="yt-facade reel-frame" data-yt="jXD74uVZgz0" aria-label="Play animation reel">
+      <img class="yt-thumb" src="https://i.ytimg.com/vi/jXD74uVZgz0/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+      <span class="yt-play" aria-hidden="true"></span>
+    </button>
+  </section>
+
+  <footer>
+    <p><a class="email-link" href="contact.html">space [at] spaceclottey.com</a></p>
+  </footer>
+
+  <script>
+    // Thumbnail fallback: if maxresdefault returns YouTube's tiny grey
+    // placeholder (120x90), swap to hqdefault which always exists.
+    document.querySelectorAll('.yt-thumb').forEach(img => {
+      img.addEventListener('load', () => {
+        if (img.naturalWidth <= 120 && img.src.includes('maxresdefault')) {
+          img.src = img.src.replace('maxresdefault', 'hqdefault');
+        }
+      }, { once: true });
+    });
+
+    // Lite YouTube facade: only load the iframe when the user clicks.
+    document.querySelectorAll('.yt-facade').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.yt;
+        const wrapper = document.createElement('div');
+        wrapper.className = btn.className.replace('yt-facade', 'yt-player').trim();
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.title = btn.getAttribute('aria-label');
+        wrapper.appendChild(iframe);
+        btn.replaceWith(wrapper);
+      }, { once: true });
+    });
+  </script>
+</body>
 </html>
-

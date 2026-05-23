@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>contact · space lutterodt-clottey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+
+  <a href="index.html" class="back-link">← back</a>
+
+  <main class="contact">
+    <h1>say hi</h1>
+    <p class="lead">drop me an email. I read everything and try to reply.</p>
+
+    <div class="contact-actions">
+      <button class="email-copy" data-email="space@spaceclottey.com" aria-label="Copy email to clipboard">
+        <span class="email-addr">space@spaceclottey.com</span>
+        <span class="copy-hint">click to copy</span>
+      </button>
+      <a class="mail-app" href="mailto:space@spaceclottey.com">open in mail app →</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.querySelector('.email-copy');
+    const hint = btn?.querySelector('.copy-hint');
+    btn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.email);
+        hint.textContent = 'copied!';
+        btn.classList.add('copied');
+      } catch (e) {
+        hint.textContent = 'press cmd+c to copy';
+      }
+      setTimeout(() => {
+        hint.textContent = 'click to copy';
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
