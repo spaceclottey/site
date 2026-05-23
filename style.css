@@ -39,13 +39,21 @@ img { max-width: 100%; display: block; }
   background: #000;
 }
 
-.bg-video {
+.bg-video,
+.bg-image {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
+}
+
+/* Mobile: show animated WebP, hide video element entirely. */
+.bg-video { display: none; }
+@media (min-width: 721px) {
+  .bg-image { display: none; }
+  .bg-video { display: block; }
 }
 
 .hero-overlay {

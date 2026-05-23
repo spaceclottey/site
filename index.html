@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0a0a0a">
   <title>space lutterodt-clottey</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
   <link rel="preconnect" href="https://www.youtube.com">
   <link rel="stylesheet" href="style.css">
@@ -12,10 +17,12 @@
 <body>
 
   <section class="hero">
+    <!-- Mobile bg: animated WebP autoplays without device autoplay policies. -->
+    <img class="bg-image" src="hero-bg.webp" alt="" decoding="async">
+    <!-- Desktop bg: real MP4. Source injected by JS on viewports > 720px. -->
     <video class="bg-video" autoplay loop muted playsinline preload="auto"
-           poster="hero-poster.jpg"
+           poster="space_portrait_stand.png" id="bg-video"
            disablepictureinpicture disableremoteplayback>
-      <source src="hero-bg.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
 
@@ -91,7 +98,7 @@
 
   <section id="reel" class="reel">
     <h2>animation reel</h2>
-    <video class="reel-frame" controls preload="metadata" playsinline poster="animation-reel-poster.jpg">
+    <video class="reel-frame" controls preload="metadata" playsinline poster="animation_reel_thumbnail.png">
       <source src="animation-reel.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -102,6 +109,16 @@
   </footer>
 
   <script>
+    // Desktop-only background video: on mobile we just show the poster image.
+    if (!matchMedia('(max-width: 720px)').matches) {
+      const v = document.getElementById('bg-video');
+      const s = document.createElement('source');
+      s.src = 'hero-bg.mp4';
+      s.type = 'video/mp4';
+      v.appendChild(s);
+      v.load();
+    }
+
     // Thumbnail fallback: if maxresdefault returns YouTube's tiny grey
     // placeholder (120x90), swap to hqdefault which always exists.
     document.querySelectorAll('.yt-thumb').forEach(img => {
