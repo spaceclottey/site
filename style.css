@@ -217,11 +217,19 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.01em;
 }
 .project-info .meta {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.25rem;
   font-size: 0.78rem;
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: lowercase;
+}
+.project-info .credit {
+  margin: 0 0 0.9rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  font-weight: 500;
 }
 .project-info p {
   margin: 0 0 0.65rem;
